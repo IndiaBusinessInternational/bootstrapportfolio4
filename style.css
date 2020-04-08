@@ -1,0 +1,147 @@
+/* box */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* end of box */
+
+body{
+  font-family: 'Acme', sans-serif;
+}
+header{
+  height: 100vh;
+  background: url("img/bluetallbuilding500x625.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.banner-center{
+  height: 100vh;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 75px;
+}
+
+.banner-center h1 {
+  font-size: 100px;
+}
+
+.banner-underline{
+  width: 300px;
+  border: 3px solid #F15025;
+  margin: 0px auto 40px auto;
+}
+
+.btn-holder {
+  display: flex;
+  justify-content: center;
+}
+
+.white-btn,
+.navy-btn {
+  color: whitesmoke;
+  font-size: 30px;
+  margin: 0 30px;
+  text-decoration: none!important;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+
+.navy-btn {
+  border: 3px solid #353531;
+  background-color: #2D3142;
+}
+
+.white-btn {
+  border: 3px solid whitesmoke;
+}
+
+.white-btn:hover,
+.white-btn:focus {
+  color: #F15025;
+  background-color: whitesmoke;
+}
+/* end of banner section */
+
+/* title */
+.title {
+  margin: 20px 0 40px 0;
+}
+
+.title-underline {
+  width: 150px;
+  border: 3px solid #F15025;
+  margin: 0px auto 10px auto;
+}
+
+/* end of title */
+/* qualities section */
+#qualities {
+  background-color: #CED0CE;
+  padding: 40px;
+}
+
+#qualities .fa {
+  /* .fa is correct whereas . fa is wrong-as there should not be any space after dot. */
+  font-size: 100px;
+  color: #F15025;
+  margin-bottom: 10px;
+}
+
+#qualities h2 {
+  margin-bottom: 20px;
+}
+/* end of qualities section */
+
+/* projects */
+#projects {
+  padding: 20px 0 0 0;
+  background-color: #2D3142;
+  color: whitesmoke;
+}
+
+.left {
+  padding-left: 0;
+}
+
+.right {
+  padding-right: 0;
+}
+
+/* end of projects */
+/* media */
+@media screen and (max-width:800px) {
+  .banner-center h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  #projects .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .item-1 {
+    order:1;
+  }
+  .item-2 {
+    order:2;
+  }
+  .item-3 {
+    order:4;
+  }
+  .item-4 {
+    order:3;
+  }
+  .item-5 {
+    order:5;
+  }
+  .item-6 {
+    order:6;
+  }
+}
